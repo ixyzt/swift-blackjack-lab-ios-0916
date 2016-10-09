@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+
+class House: Player {
+    // Add a calculated property mustHit that returns a boolean of whether the house must take a new card or not. Treat the "house rules" as staying at a score of seventeen (17)
+    var mustHit: Bool { return handscore < 17 }
+    
+    
+    override init(name: String) {
+        super.init(name: name)
+        tokens = 1000 }
+    
+}
